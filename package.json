@@ -1,0 +1,24 @@
+{
+	"name": "calligraphy",
+	"version": "0.0.0",
+	"description": "Command-line Unicode block font",
+	"author": "Felipe Vargas <felipe@fvgs.ai> (fvgs.ai)",
+	"repository": "fvgs/calligraphy",
+	"homepage": "https://github.com/fvgs/calligraphy#readme",
+	"bugs": "https://github.com/fvgs/calligraphy/issues",
+	"main": "src",
+	"license": "MIT",
+	"keywords": [
+		"font",
+		"unicode",
+		"block",
+		"blocks",
+		"command",
+		"line",
+		"command-line",
+		"commandline",
+		"digits",
+		"numbers",
+		"time"
+	]
+}
