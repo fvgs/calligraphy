@@ -1,0 +1,49 @@
+#! /usr/bin/env node
+
+const {EOL} = require('os')
+const zipWith = require('lodash/zipWith')
+
+const {
+	zero,
+	one,
+	two,
+	three,
+	four,
+	five,
+	six,
+	seven,
+	eight,
+	nine,
+	space,
+	s,
+	colon,
+} = require('..')
+
+const {stdout} = process
+
+const CHARACTER_SPACING = ' '.repeat(4)
+const PADDING = EOL.repeat(4)
+const INDENT = ' '.repeat(10)
+
+const getLines = vals =>
+	zipWith(...vals, (...args) => args.join(CHARACTER_SPACING))
+
+const display = vals => {
+	stdout.write(PADDING)
+
+	const lines = getLines(vals)
+
+	lines.forEach(line => {
+		stdout.write(INDENT)
+		console.log(line)
+	})
+}
+
+stdout.write(PADDING)
+
+;[
+	[zero, one, two, three, four, five],
+	[six, seven, eight, nine, space, s, colon],
+].forEach(display)
+
+stdout.write(PADDING.repeat(2))

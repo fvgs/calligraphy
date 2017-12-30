@@ -20,5 +20,8 @@
 		"digits",
 		"numbers",
 		"time"
-	]
+	],
+	"devDependencies": {
+		"lodash": "^4.17.4"
+	}
 }
