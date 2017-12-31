@@ -1,6 +1,6 @@
 {
 	"name": "calligraphy",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Command-line Unicode block font",
 	"author": "Felipe Vargas <felipe@fvgs.ai> (fvgs.ai)",
 	"repository": "fvgs/calligraphy",
