@@ -46,10 +46,10 @@ const zipWith = require('lodash/zipWith')
 const {EOL} = require('os')
 
 // Prints '3'
-three.forEach(console.log)
+three.forEach(line => console.log(line))
 
 // Prints '12:45'
 const time = [one, two, colon, three, four]
-const output = zipWith(...time, (...args) => args.join('  ')).join(EOL))
+const output = zipWith(...time, (...args) => args.join('  ')).join(EOL)
 console.log(output)
 ```
